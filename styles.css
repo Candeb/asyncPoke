@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Nunito', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.header {
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  z-index: 999;
+  width: 100%;
+}
+
+.logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 100px;
+  height: 70vh;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-number {
+  border-radius: 25px;
+  width: 200px;
+  font-size: 25px;
+  font-weight: 900;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #d9b0ff;
+}
+
+/* From uiverse.io */
+.btn-buscar {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.btn-buscar::after {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.btn-buscar:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color),
+    0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  cursor: pointer;
+}
+
+.btn-buscar:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.mje-input {
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.img-container {
+  width: 200px;
+  height: 300px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.data-container {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+small {
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.poke_type {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  letter-spacing: 3px;
+  box-shadow: 2px 2px 4px #d9b0ff;
+}
+
+.types {
+  padding: 10px 0px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.error-nro-mje {
+  letter-spacing: 3px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.error-nro {
+  width: 227px;
+  height: 200px;
+  padding: 0px 10px 0px 30px;
+}
+
+.error-nro img {
+  height: 150px;
+}
+
+.water {
+  background-color: rgb(0, 132, 255);
+}
+.poison {
+  background-color: rgb(241, 79, 128);
+}
+
+.normal {
+  background-color: rgb(179, 174, 174);
+}
+.fire {
+  background-color: rgb(228, 114, 7);
+}
+.electric {
+  background-color: rgb(226 205 26);
+}
+.grass {
+  background-color: rgb(96, 197, 28);
+}
+.ice {
+  background-color: rgb(26, 200, 206);
+}
+.fighting {
+  background-color: rgb(165, 78, 6);
+}
+.ground {
+  background-color: rgb(235, 148, 66);
+}
+.flying {
+  background-color: rgb(93, 199, 248);
+}
+.psychic {
+  background-color: rgb(150, 2, 248);
+}
+.bug {
+  background-color: rgb(15, 75, 10);
+}
+.rock {
+  background-color: rgb(90, 65, 65);
+}
+.ghost {
+  background-color: rgb(58, 6, 6);
+}
+.dragon {
+  background-color: rgb(189, 174, 40);
+}
+.dark {
+  background-color: rgb(24, 35, 71);
+}
+.steel {
+  background-color: rgba(99, 97, 97, 0.678);
+}
+.fairy {
+  background-color: rgba(255, 23, 185, 0.644);
+}
